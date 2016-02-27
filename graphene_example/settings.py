@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'posts',
     'comments',
     'django_graphiql',
-    'graphene.contrib.django'
+    'graphene.contrib.django',
+    'autofixture'
 ]
 
 MIDDLEWARE_CLASSES = [
