@@ -29,7 +29,7 @@ class PostNode(DjangoNode):
 
 
 class Query(ObjectType):
-    Post = relay.NodeField(PostNode)
+    post = relay.NodeField(PostNode)
     all_posts = DjangoFilterConnectionField(PostNode)
 
     class Meta:

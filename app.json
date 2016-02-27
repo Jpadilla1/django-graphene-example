@@ -1,0 +1,8 @@
+{
+  "name": "Django Graphene example",
+  "description": "A Django app to explore the Graphene framework for Python",
+  "image": "heroku/python",
+  "repository": "https://github.com/Jpadilla1/django-graphene-example",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ]
+}
