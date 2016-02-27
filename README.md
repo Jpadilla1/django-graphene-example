@@ -15,6 +15,8 @@ $ pip install -r requirements.txt
 $ createdb django_graphene_example
 
 $ python manage.py migrate
+$ python manage.py loadtestdata posts.Post:20
+$ python manage.py loadtestdata comments.Comment:30
 
 $ heroku local
 ```
