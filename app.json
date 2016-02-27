@@ -4,5 +4,8 @@
   "image": "heroku/python",
   "repository": "https://github.com/Jpadilla1/django-graphene-example",
   "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql" ]
+  "addons": [ "heroku-postgresql" ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate"
+  },
 }
