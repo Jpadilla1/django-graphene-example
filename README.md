@@ -41,3 +41,28 @@ or
 For more information about using Python on Heroku, see these Dev Center articles:
 
 - [Python on Heroku](https://devcenter.heroku.com/categories/python)
+
+## Example Query
+
+First 2 posts with 5 comments each
+
+```
+query {
+  allPosts(first: 2) {
+    edges {
+      node {
+        id,
+        title,
+        author,
+        comment(first: 5) {
+          edges {
+            node {
+              text
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
