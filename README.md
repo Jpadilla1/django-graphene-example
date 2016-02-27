@@ -7,7 +7,7 @@ A Django app to explore the Graphene framework for Python
 Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
-$ git clone git@github.com:jpadilla1/django-graphene-example.git
+$ git clone https://github.com/Jpadilla1/django-graphene-example.git
 $ cd django-graphene-example
 
 $ pip install -r requirements.txt
