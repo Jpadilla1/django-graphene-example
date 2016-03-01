@@ -1,4 +1,4 @@
-from graphene import relay, ObjectType
+from graphene import relay, ObjectType, Field
 from graphene.contrib.django.filter import DjangoFilterConnectionField
 from graphene.contrib.django.fields import DjangoConnectionField, ConnectionOrListField
 from graphene.contrib.django.types import DjangoNode
@@ -28,9 +28,15 @@ class PostNode(DjangoNode):
     comments = DjangoConnectionField(CommentNode)
 
 
+
 class Query(ObjectType):
     post = relay.NodeField(PostNode)
-    all_posts = DjangoFilterConnectionField(PostNode)
+    posts = DjangoFilterConnectionField(PostNode)
+    viewer = Field('self')
 
     class Meta:
         abstract = True
+
+
+    def resolve_viewer(self, *args, **kwargs):
+        return self
